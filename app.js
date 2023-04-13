@@ -1,41 +1,20 @@
-//homeWork-3 (1)
-var arr = []
-//Добавляем 100 чисел в массив
-for (var i = 0; i <= 100; i++) {
-    arr.push(i)
+// homeWork_3 (1)
+
+// create empty array
+var list = []
+// add 100 numbers
+for (let i = 0; i <= 100; i++) {
+    list.push(i)
 }
-//Условие / 3
-for (var a = 0; a < arr.length; a++) {
-    if (arr[a] % 3 === 0) {
-        console.log(arr[a] = 'Fizz')
-    } else {
-        console.log(arr[a])
-    }
-}
-//Условие / 5
-for (var b = 0; b < arr.length; b++) {
-    if (arr[b] % 5 === 0) {
-        console.log(arr[b] = 'Buzz')
-    } else {
-        console.log(arr[b])
-    }
-}
-//Условие / 3 && / 5
-for (var c = 0; c < arr.length; c++) {
-    if (arr[c] % 3 === 0 && arr[c] % 5 === 0) {
-        console.log(arr[c] = 'FizzBuzz')
-    } else {
-        console.log(arr[c])
-    }
+for (let i = 0; i < list.length; i++) {
+    console.log(list[i] % 3 === 0 ? list[i] = 'fizz' : list[i]) // fizz
+    //console.log(list[i] % 5 === 0 ? list[i] = 'buzz' : list[i]) // buzz
+    //console.log(list[i] % 3 === 0 && list[i] % 5 === 0 ? list[i] = 'fizzbuzz' : list[i]) //fizzbuzz
 }
 
+// homeWork_3 (2)
 
-//homeWork-3 (2)
 var milkBeer = ['milk', 'beer', 'beer', 'milk', 'milk']
-for (let d = 0; d < milkBeer.length; d++) {
-    if (milkBeer[d] === 'milk') {
-        console.log('good')
-    } else {
-        console.log('bad')
-    }
+for (let i = 0; i < milkBeer.length; i++) {
+    console.log(milkBeer[i] === 'milk' ? 'good' : 'bad')
 }
