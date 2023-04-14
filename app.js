@@ -6,15 +6,28 @@ var list = []
 for (let i = 0; i <= 100; i++) {
     list.push(i)
 }
-for (let i = 0; i < list.length; i++) {
-    console.log(list[i] % 3 === 0 ? list[i] = 'fizz' : list[i]) // fizz
-    //console.log(list[i] % 5 === 0 ? list[i] = 'buzz' : list[i]) // buzz
-    //console.log(list[i] % 3 === 0 && list[i] % 5 === 0 ? list[i] = 'fizzbuzz' : list[i]) //fizzbuzz
+
+for (var i = 0; i < list.length; i++) {
+    if (list[i] % 3 === 0 && list[i] % 5 === 0) {
+        console.log('FizzBuzz');
+    } else if (list[i] % 3 === 0) {
+        console.log('Fizz');
+    } else if (list[i] % 5 === 0) {
+        console.log('Buzz');
+    } else {
+        console.log(list[i]);
+    }
 }
 
-// homeWork_3 (2)
+//homeWork_3 (2)
 
 var milkBeer = ['milk', 'beer', 'beer', 'milk', 'milk']
+var resultList = []
 for (let i = 0; i < milkBeer.length; i++) {
-    console.log(milkBeer[i] === 'milk' ? 'good' : 'bad')
+    if (milkBeer[i] === 'milk') {
+        resultList.push('good')
+    } else {
+        resultList.push('bad')
+    }
 }
+console.log(resultList)
